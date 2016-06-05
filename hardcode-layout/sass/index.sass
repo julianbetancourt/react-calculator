@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100)
+
+*
+  box-sizing: border-box
+
+body
+  min-height: 100vh
+  background: url('https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a9504411622da8e65df977606f82479c') center no-repeat
+  background-size: cover
+  font-family: 'Lato'
+  font-weight: 100
+
+.container
+  display: flex
+  justify-content: center
+  align-items: center
+  min-height: 100vh
+
+.calculator
+  background: rgba(0, 45, 159, 0.72)
+  color: white
+  width: 25rem
+  height: 39.8rem
+  border-radius: 10px
+  //padding: 20px
+  .calc-container
+    background: rgba(0, 45, 159, 0.82)
+    height: 30%
+    border-radius: 10px 10px 0 0
+    padding: 20px
+  .calculations
+    height: 100%
+    .current-operation
+      height: 40%
+      display: flex
+      justify-content: flex-end
+      align-items: flex-end
+      span
+        -webkit-user-select: none
+    .current-result
+      font-size: 65px
+      display: flex
+      justify-content: flex-end
+      align-items: flex-end
+      height: 60%
+      span
+        -webkit-user-select: none
+  .buttons
+    height: 70%
+    .row
+      height: 20%
+      display: flex
+      .button
+        width: 25%
+        //border: 1px solid
+        justify-content: center
+        align-items: center
+        display: flex
+        cursor: pointer
+        font-size: 40px
+        &:hover
+          background: rgba(0, 45, 159, 0.82)
+        span
+          -webkit-user-select: none
+    .remove
+      justify-content: flex-end

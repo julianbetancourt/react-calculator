@@ -1,0 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100);
+* {
+  box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  background: url("https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a9504411622da8e65df977606f82479c") center no-repeat;
+  background-size: cover;
+  font-family: 'Lato';
+  font-weight: 100; }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; }
+
+.calculator {
+  background: rgba(0, 45, 159, 0.72);
+  color: white;
+  width: 25rem;
+  height: 39.8rem;
+  border-radius: 10px; }
+  .calculator .calc-container {
+    background: rgba(0, 45, 159, 0.82);
+    height: 30%;
+    border-radius: 10px 10px 0 0;
+    padding: 20px; }
+  .calculator .calculations {
+    height: 100%; }
+    .calculator .calculations .current-operation {
+      height: 40%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end; }
+      .calculator .calculations .current-operation span {
+        -webkit-user-select: none; }
+    .calculator .calculations .current-result {
+      font-size: 65px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      height: 60%; }
+      .calculator .calculations .current-result span {
+        -webkit-user-select: none; }
+  .calculator .buttons {
+    height: 70%; }
+    .calculator .buttons .row {
+      height: 20%;
+      display: flex; }
+      .calculator .buttons .row .button {
+        width: 25%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        cursor: pointer;
+        font-size: 40px; }
+        .calculator .buttons .row .button:hover {
+          background: rgba(0, 45, 159, 0.82); }
+        .calculator .buttons .row .button span {
+          -webkit-user-select: none; }
+    .calculator .buttons .remove {
+      justify-content: flex-end; }
